@@ -1,0 +1,20 @@
+@import url("root.css");
+@import url("reset.css");
+
+#container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#container .background {
+    background: linear-gradient(180deg, var(--blue-light) 0%, var(--blue-dark) 100%);
+
+    clip-path: polygon(0 10rem, 100% 20vh, 100% 100%, 0 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}
