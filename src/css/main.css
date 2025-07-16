@@ -1,20 +1,121 @@
 @import url("root.css");
 @import url("reset.css");
 
+/*=======================
+        COMMONS
+=======================*/
+
 #container {
+    position: absolute;
     width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
 }
 
-#container .background {
+#container .background-color {
+    z-index: -1;
+    position: absolute;
+    display: block;
     background: linear-gradient(180deg, var(--blue-light) 0%, var(--blue-dark) 100%);
-
-    clip-path: polygon(0 10rem, 100% 20vh, 100% 100%, 0 100%);
-    width: 100vw;
+    clip-path: polygon(0 20vh, 100% 80vh, 100% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+}
+#container .background-gif {
+    z-index: -2;
+    position: absolute;
+    display: block;
+    background: url(/src/assets/img/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
 }
 
 section {
     width: 100%;
     min-height: 100vh;
+}
+
+.card {
+    background-color: var(--orange);
+    padding: 2rem;
+}
+.card .card-title {
+    text-align: center;
+    font-size: 5rem;
+}
+.card .card-title .sub-text {
+    font-size: 2.3rem;
+}
+.card .card-description {
+    color: var(--neutral);
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.card .card-figure {
+    position: absolute;
+}
+.card .card-figure .figure-front {
+    position: absolute;
+}
+.card .card-figure .figure-back {
+    position: absolute;
+    z-index: -1;
+}
+
+.border-drawn {
+    border: 10px solid transparent;
+    border-width: 1rem;
+    border-style: solid;
+    border-image: url(/src/assets/img/border1.png) 15;
+    border-image-outset: .4rem;
+}
+
+/*=======================
+          HERO
+=======================*/
+
+#hero .card {
+    width: 32rem;
+    height: 25rem;
+    margin: 8rem 0 0 3rem;
+}
+#hero .figure-front {
+    transform: translate(12rem, -9rem);
+    width: 40rem;
+}
+#hero .figure-back {
+    transform: translate(12rem, -9rem);
+    width: 40rem;
+}
+
+/*=======================
+          ABOUT
+=======================*/
+
+#about .card {
+    position: relative;
+    display: block;
+    background-color: var(--orange-light);
+}
+#card-creativity, #card-interpersonal{
+    width: 20rem;
+    height: 17rem;
+}
+#card-technical {
+    width: 60rem;
+    height: 10rem;
+    background-color: var(--orange);
+}
+
+#about .card-container {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    row-gap: 5rem;
+    column-gap: 20rem;
+    flex-wrap: wrap;
 }

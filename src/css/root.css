@@ -9,5 +9,11 @@
 
     --white: #FFFFFF;
     --neutral-light: #F9F9F9;
+    --neutral: #313131;
     --neutral-dark: #1A1A1A;
+}
+
+@font-face {
+    font-family: WildWords;
+    src: url(/src/assets/font/WildWords_Roman.ttf);
 }
