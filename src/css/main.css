@@ -98,9 +98,15 @@ section {
     position: relative;
     display: block;
     background-color: var(--orange-light);
+    height: 18.5rem;
+    padding: .5rem;
+}
+#about .card:hover {
+    background-color: var(--orange);
+    transform: scale(102%);
 }
 #card-creativity, #card-interpersonal{
-    width: 20rem;
+    width: 33rem;
     height: 17rem;
 }
 #card-technical {
@@ -110,12 +116,17 @@ section {
 }
 
 #about .card-container {
-    overflow: hidden;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
     row-gap: 5rem;
-    column-gap: 20rem;
+    column-gap: 10rem;
     flex-wrap: wrap;
+}
+#about .card-title {
+    font-size: 2rem;
+}
+#about .card-description img {
+    height: 1.2rem;
 }
