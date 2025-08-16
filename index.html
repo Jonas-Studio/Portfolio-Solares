@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar3s Portfólio</title>
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <div id="container">
@@ -16,6 +17,7 @@
         </nav>
         <div class="background-color"></div>
         <div class="background-gif"></div>
+        
         <section id="hero">
             <div class="card border-drawn">
                 <div class="card-figure">
@@ -26,35 +28,69 @@
                 <p class="card-description">Artista digital com um estilo cartoon mais focado para o publico jovem adulto.<br><br>Desenho desde que me conheço por gente então exercito essa minha paixão e habilidade a muito tempo.</p>
             </div>
         </section>
+        
         <section id="about">
-            <div class="card-container">
-                <div id="card-creativity" class="card border-drawn">
-                    <h2 class="card-title">Competencias Criativas</h2>
-                    <p class="card-description">
-                        • Criativo em tudo que faz<br><br>
-                        • Familiaridade e habilidade com Krita<br><br>
-                        • Formação e prática em animação 2D usando Toon Boom Harmony (curso "Animação 2D – Básico ao Avançado – Combo Estúdio")</p>
+            <div class="skill-container" id="creativity-skills">
+                <div class="skill-button">
+                    <i class="fa-regular fa-lightbulb skill-image"></i>                    
+                    <p class="skill-text">Competencias Criativas</p>
                 </div>
-                <div id="card-interpersonal" class="card border-drawn">
-                    <h2 class="card-title">Competencias Interpessoais</h2>a 
-                    <p class="card-description">
-                        • Trabalho bem em equipe<br><br>
-                        • Determinado e proativo<br><br>
+                <div class="skill-popup card border-drawn disabled">
+                    <p>
+                        • Criativo em tudo que faz <br><br>
+                        • Familiaridade e habilidade com Krita <br><br>
+                        • Formação e prática em animação 2D usando Toon Boom Harmony (curso "Animação 2D – Básico ao Avançado – Combo Estúdio")
+                    </p>
+                    <button class="popup-exit-button"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
+            </div>
+            <div class="skill-container" id="interpersonal-skills">
+                <div class="skill-button">
+                    <i class="fa-solid fa-people-group skill-image"></i>                    
+                    <p class="skill-text">Competencias Interpessoais</p>
+                </div>
+                <div class="skill-popup card border-drawn disabled">
+                    <p>
+                        • Trabalho bem em equipe <br><br>
+                        • Determinado e proativo <br><br>
                         • Disponibilidade e abertura para aprender
                     </p>
+                    <button class="popup-exit-button"><i class="fa-regular fa-circle-xmark"></i></button>
                 </div>
-                <div id="card-technical" class="card border-drawn">
-                    <h2 class="card-title">Competencias Tecnicas</h2>
-                    <p class="card-description">
-                       <img src="/src/assets/img/TBH_icon.png"> Toon Boom Harmony: conhecimento do básico ao avançado em animação 2D<br><br>
-                       <img src="/src/assets/img/Krita_icon.png"> Krita: uso fluído e eficiente para ilustração e pintura digital
+            </div>
+            <div class="skill-container" id="technical-skills">
+                <div class="skill-button">
+                    <i class="fa-solid fa-gear skill-image"></i>                    
+                    <p class="skill-text">Competencias Tecnicas</p>
+                </div>
+                <div class="skill-popup card border-drawn disabled">
+                    <p>
+                        • Toon Boom Harmony: conhecimento do básico ao avançado em animação 2D <br><br>
+                        • Krita: uso fluído e eficiente para ilustração e pintura digital
                     </p>
+                    <button class="popup-exit-button"><i class="fa-regular fa-circle-xmark"></i></button>
                 </div>
             </div>
         </section>
-        <section id="exhibition">
-
+        
+        <section id="portfolio">
+            <div class="portfolio-images-container">
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/fernanda.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/tsukki.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/merluza.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/nova_geracao.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/viloes.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/solares_model_sheet.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/cosmo_model_sheet.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/laboratorio_de_maxine.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/escola_canario_capa_teste.jpg" alt=""></div>
+                <div class="portfolio-image"><img src="/src/assets/img/portfolio/o_imperio_de_solares.jpg" alt=""></div>
+            </div>
         </section>
+        <div class="featured-hud disabled">
+            <img class="featured-image" src="/src/assets/img/portfolio/fernanda.jpg" alt="">
+            <div class="featured-bg"></div>
+        </div>
     </div>
 
     <script src="/src/js/visuals.js"></script>
